@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+class ps{
+	private:
+	int mau,tu;
+	public:
+	void nhap(){
+		cout<<"Nhap tu: ";
+		cin>>tu;
+		do{
+		cout<<"Nhap mau: ";
+		cin>>mau;
+		if(mau==0){
+			cout<<"Nhap sai gia tri mau, nhap lai gia tri"<<endl;
+		}
+		}while(mau==0);
+	}
+	void xuat();
+};
+void ps::xuat(){
+	cout<<" "<<mau<<endl;
+	cout<<" -"<<endl;
+	cout<<" "<<tu<<endl;
+}
+int main(){
+	ps a;
+	a.nhap();
+	a.xuat();
+}
